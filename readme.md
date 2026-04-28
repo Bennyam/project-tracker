@@ -1,4 +1,13 @@
-# 🚀 Project Tracker – Full Stack Web Application
+# 🚀 Project Tracker
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://project-tracker.benameryckx.be)
+![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)
+![FastAPI](https://img.shields.io/badge/Backend-FastAPI-green?logo=fastapi)
+![Tailwind](https://img.shields.io/badge/Styling-TailwindCSS-38B2AC?logo=tailwind-css)
+![SQLite](https://img.shields.io/badge/Database-SQLite-003B57?logo=sqlite)
+![Nginx](https://img.shields.io/badge/Server-Nginx-009639?logo=nginx)
+![Uvicorn](https://img.shields.io/badge/ASGI-Uvicorn-black)
+![Status](https://img.shields.io/badge/Status-Live-success)
 
 🔗 **Live demo:** https://project-tracker.benameryckx.be
 
@@ -6,7 +15,8 @@
 
 ## 📌 Over het project
 
-Project Tracker is een fullstack webapplicatie waarmee je klanten en hun projecten kan beheren.
+Project Tracker is een **production-ready fullstack webapplicatie** waarmee je klanten en hun projecten kan beheren.
+
 De applicatie laat toe om klanten aan te maken, te bewerken en te verwijderen, en per klant meerdere projecten te beheren met status en budget.
 
 Dit project werd volledig van scratch opgebouwd met focus op:
@@ -30,11 +40,11 @@ Dit project werd volledig van scratch opgebouwd met focus op:
 
 - Projecten per klant beheren
 - Budget en status per project
-- CRUD operaties voor projecten
+- Volledige CRUD operaties
 
 ### 📊 Dashboard
 
-- Overzicht van alle klanten en projecten
+- Overzicht van klanten en projecten
 - Statistieken (aantal klanten, projecten, budget)
 - Filtering op status
 
@@ -54,7 +64,7 @@ Dit project werd volledig van scratch opgebouwd met focus op:
 
 - React (Vite)
 - Custom hooks (data fetching)
-- Fetch API (met eigen request wrapper)
+- Fetch API (custom request wrapper)
 - Tailwind CSS
 - Component-based architecture
 
@@ -95,32 +105,13 @@ Frontend en backend communiceren via:
 
 ---
 
-## ⚙️ Belangrijke implementatiedetails
+## ⚙️ Highlights
 
-### 🔁 Custom API layer
-
-Een centrale request-wrapper verwerkt:
-
-- JSON parsing
-- error handling
-- status checks
-- fallback messages
-
-### 🔗 Data compositie
-
-Frontend combineert:
-
-- clients
-- projecten per client
-
-→ tot één consistente datastructuur voor UI rendering
-
-### ⚠️ Edge cases
-
-- Empty states (geen clients → geen projecten mogelijk)
-- Filtered states
-- API errors (user-friendly feedback)
-- Loading states
+- Custom API service layer met centrale error handling
+- Data compositie (clients + projecten per client)
+- Full CRUD functionaliteit
+- Nested resources (clients → projects)
+- Real-world UX flows (empty states, feedback, filters)
 
 ---
 
@@ -171,7 +162,7 @@ Frontend kon API niet bereiken.
 
 ## 🚀 Deployment
 
-De applicatie draait op een eigen Linux server:
+De applicatie draait op een **eigen Linux server**:
 
 - Frontend build gehost via Nginx
 - Backend draait via systemd service
@@ -192,7 +183,7 @@ Overzicht van alle klanten, projecten en budgetten in één centrale cockpit.
 
 ### 👤 Clients overzicht
 
-Beheer van klanten met gekoppelde projecten, statussen en budgetinformatie.
+Beheer van klanten met gekoppelde projecten en statussen.
 
 ![Clients](./screenshots/clients.png)
 
@@ -200,7 +191,7 @@ Beheer van klanten met gekoppelde projecten, statussen en budgetinformatie.
 
 ### 📁 Projects overzicht
 
-Alle projecten gegroepeerd en filterbaar per status (active, planned, completed).
+Projecten gegroepeerd en filterbaar per status.
 
 ![Projects](./screenshots/projects.png)
 
@@ -208,7 +199,7 @@ Alle projecten gegroepeerd en filterbaar per status (active, planned, completed)
 
 ### ✨ Modals (Create / Update)
 
-Gebruiksvriendelijke modals voor het aanmaken en bewerken van klanten en projecten.
+Gebruiksvriendelijke modals voor create/update flows.
 
 ![Modal](./screenshots/modal.png)
 
@@ -222,14 +213,12 @@ Duidelijke feedback wanneer er nog geen data beschikbaar is.
 
 ---
 
-## 🎯 Leerdoelen
+## 🎯 What I learned
 
-Met dit project heb ik geleerd:
-
-- Fullstack applicaties bouwen
-- API design en structuur
+- Fullstack applicaties bouwen van scratch
+- API design en structuur met FastAPI
 - Data flow tussen frontend en backend
-- Deployment op eigen server
+- Deployment op eigen server (Nginx, systemd, HTTPS)
 - Debuggen van real-world problemen
 - UX denken (empty states, feedback, flows)
 
@@ -254,5 +243,3 @@ Dit project toont mijn vermogen om:
 - een productieklare setup op te zetten
 
 👉 Van idee → tot live applicatie 🚀
-
----
