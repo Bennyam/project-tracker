@@ -213,7 +213,7 @@ Duidelijke feedback wanneer er nog geen data beschikbaar is.
 
 ---
 
-## 🎯 What I learned
+## 🎯 Wat ik geleerd heb
 
 - Fullstack applicaties bouwen van scratch
 - API design en structuur met FastAPI
